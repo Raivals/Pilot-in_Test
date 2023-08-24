@@ -1,0 +1,114 @@
+.maintenance {
+  display: flex;
+  width: 1440px;
+  padding: 8px 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background: var(--gray-100, #f7fafb);
+}
+
+.maintenance_text {
+  color: var(--black, #072038);
+
+  font-family: Porpora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.borderless_btn {
+  color: var(--primary-500, #26c1d9);
+  text-align: center;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.navbar {
+  background: var(
+    --body-gradient,
+    linear-gradient(90deg, #072038 0%, #0a355f 100%)
+  );
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.logo-img {
+  display: flex;
+  width: 190px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.navbar_left {
+  color: var(--white, #fff);
+  display: flex;
+  height: 64px;
+  align-items: center;
+  gap: 48px;
+  align-items: flex-start;
+}
+.navbar_ul {
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  height: 64px;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar_li {
+  text-decoration: none !important;
+}
+
+.navbar_container {
+  display: none !important;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn_blue {
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-500, #26c1d9);
+  background: var(--primary-500, #26c1d9);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--black, #072038);
+  text-align: center;
+}
+
+.language {
+  display: flex;
+  align-items: flex-start;
+  color: var(--primary-500, #26c1d9);
+  text-align: center;
+  /* specials/bouton/large */
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
