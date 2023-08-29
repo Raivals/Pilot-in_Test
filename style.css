@@ -177,7 +177,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  color: var(--black, #072038);
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
@@ -214,13 +213,14 @@
   line-height: 160px; /* 100% */
   text-transform: uppercase;
   color: var(--primary-500, #26c1d9);
-  font-family: Outfit;
-  font-size: 160px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160px;
-  text-transform: uppercase;
   white-space: nowrap;
+}
+
+.layout_data {
+  text-shadow: -1px 1px 0 #26c1d9, 1px 1px 0 #26c1d9, 1px -1px 0 #26c1d9,
+    -1px -1px 0 #26c1d9;
+
+  color: rgba(7, 32, 56, 0.9);
 }
 
 .img_separation {
