@@ -44,6 +44,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  cursor: pointer;
 }
 .navbar {
   background: var(
@@ -191,15 +192,15 @@
 }
 
 .client_container {
+  padding: 3rem 5rem;
   display: flex;
-  flex: 1 0 0;
 }
 
 .client_img {
-  gap: 32px;
-
-  height: 69px;
-  width: 132px;
+  padding-right: 2rem;
+  height: 50px;
+  width: 200px;
+  object-fit: contain;
 }
 
 .banner_layout {
