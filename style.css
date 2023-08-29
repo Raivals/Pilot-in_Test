@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 6rem;
+  padding: 0.5rem 5rem;
 }
 
 .logo-img {
@@ -123,4 +123,110 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+}
+
+.main {
+  padding-top: 7.8rem;
+  background: var(
+    --body-gradient,
+    linear-gradient(90deg, #072038 0%, #0a355f 100%)
+  );
+}
+
+.main_intro {
+  padding: 0.5rem 5rem;
+  width: 50%;
+}
+.main_title {
+  color: var(--white, #fff);
+  /* titre-1 */
+  font-family: Outfit;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px; /* 100% */
+}
+
+.main_orga {
+  color: var(--primary-500, #26c1d9);
+}
+
+.main_description {
+  align-self: stretch;
+  color: var(--white, #fff);
+
+  margin-top: 2rem;
+  font-family: Porpora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.btn_orange {
+  margin-top: 2rem;
+  padding: 12px 16px;
+  color: var(--black, #072038);
+  gap: 8px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-500, #fd7762);
+  background: var(--primary-500, #fd7762);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--black, #072038);
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.img_datacloud {
+  float: right;
+  padding: 5rem;
+  margin-top: -420px;
+  width: 650px;
+  height: 550px;
+}
+
+.client_container {
+  display: flex;
+  flex: 1 0 0;
+}
+
+.client_img {
+  gap: 32px;
+
+  height: 69px;
+  width: 132px;
+}
+
+.banner_layout {
+  margin-top: 6rem;
+  transform: rotate(-3.5deg);
+  text-align: center;
+  font-family: Outfit;
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160px; /* 100% */
+  text-transform: uppercase;
+  color: var(--primary-500, #26c1d9);
+  font-family: Outfit;
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.img_separation {
+  display: flex;
+  width: 200%;
+  height: 86px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
