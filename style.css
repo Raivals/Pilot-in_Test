@@ -7,6 +7,30 @@
   box-sizing: border-box;
 }
 
+p {
+  font-family: Porpora;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h1 {
+  font-family: Outfit;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px;
+}
+
+h2 {
+  font-family: Outfit;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+}
+
 @font-face {
   font-family: Porpora;
   src: url(./assets/fonts/Porpora-Regular\ 12.14.56.ttf);
@@ -14,27 +38,71 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
 
+/* Colors */
+:root {
+  --primary-color: #26c1d9;
+  --secondary-color: #072038;
+  --tertiary-color: #fd7762;
+  --gray: #f7fafb;
+  --white: #fff;
+}
+
+/* Titles size and fonts */
+
+/* Btn css */
+.btn_blue {
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--secondary-color);
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn_orange {
+  padding: 12px 16px;
+  color: var(--secondary-color);
+  gap: 8px;
+  border-radius: 30px;
+  border: 1px solid var(--tertiary-color);
+  background: var(--tertiary-color);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Classic CSS */
+
 .maintenance {
   display: flex;
   padding: 8px 80px;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background: var(--gray-100, #f7fafb);
+  background: var(--gray);
 }
 
 .maintenance_text {
-  color: var(--black, #072038);
-
-  font-family: Porpora;
+  color: var(--secondary-color);
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
 }
 
 .borderless_btn {
-  color: var(--primary-500, #26c1d9);
+  color: var(--primary-color);
   text-align: center;
   font-family: "Outfit";
   font-size: 16px;
@@ -62,7 +130,7 @@
 }
 
 .navbar_left {
-  color: var(--white, #fff);
+  color: var(--white);
   display: flex;
   align-items: end;
   gap: 48px;
@@ -95,28 +163,10 @@
   gap: 16px;
 }
 
-.btn_blue {
-  padding: 12px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 30px;
-  border: 1px solid var(--primary-500, #26c1d9);
-  background: var(--primary-500, #26c1d9);
-  font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  color: var(--black, #072038);
-  text-align: center;
-  cursor: pointer;
-}
-
 .language {
   display: flex;
   align-items: flex-start;
-  color: var(--primary-500, #26c1d9);
+  color: var(--primary-color);
   text-align: center;
   /* specials/bouton/large */
   font-family: Outfit;
@@ -126,7 +176,7 @@
   line-height: 24px; /* 150% */
 }
 
-.main {
+.intro {
   padding-top: 7.8rem;
   background: var(
     --body-gradient,
@@ -139,22 +189,16 @@
   width: 50%;
 }
 .main_title {
-  color: var(--white, #fff);
-  /* titre-1 */
-  font-family: Outfit;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 72px; /* 100% */
+  color: var(--white);
 }
 
 .main_orga {
-  color: var(--primary-500, #26c1d9);
+  color: var(--primary-color);
 }
 
 .main_description {
   align-self: stretch;
-  color: var(--white, #fff);
+  color: var(--white);
 
   margin-top: 2rem;
   font-family: Porpora;
@@ -164,21 +208,8 @@
   line-height: 24px;
 }
 
-.btn_orange {
+#intro-btn {
   margin-top: 2rem;
-  padding: 12px 16px;
-  color: var(--black, #072038);
-  gap: 8px;
-  border-radius: 30px;
-  border: 1px solid var(--primary-500, #fd7762);
-  background: var(--primary-500, #fd7762);
-  font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: center;
-  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -212,7 +243,7 @@
   font-weight: 500;
   line-height: 160px; /* 100% */
   text-transform: uppercase;
-  color: var(--primary-500, #26c1d9);
+  color: var(--primary-color);
   white-space: nowrap;
 }
 
@@ -231,3 +262,14 @@
   align-items: center;
   flex-shrink: 0;
 }
+
+.problem_title {
+  color: var(--secondary-color);
+}
+/* Media Queries */
+
+/* 1440 px & + */
+
+/* 720 px & + */
+
+/* 350 px & + */
