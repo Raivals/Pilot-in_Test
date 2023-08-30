@@ -280,6 +280,15 @@ h2 {
   margin-top: 2rem;
 }
 
+.transition_img {
+  text-align: center;
+}
+
+.computer_screen {
+  width: 1050px;
+  height: 420px;
+}
+
 /* Media Queries */
 
 /* 1440 px & + */
