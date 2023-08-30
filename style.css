@@ -258,7 +258,7 @@ h2 {
 .img_separation {
   margin-top: 3rem;
   display: flex;
-  width: -content;
+  width: 100%;
 }
 
 .problems {
