@@ -5,6 +5,7 @@
   outline: 0;
   list-style: none;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 p {
@@ -255,18 +256,15 @@ h2 {
 }
 
 .img_separation {
+  margin-top: 3rem;
   display: flex;
-  width: 200%;
-  height: 86px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  width: -content;
 }
 
 .problems {
   display: flex;
-  justify-content: center;
-  margin-top: 3rem;
+  justify-content: space-between;
+  margin: 5rem 0 0 11rem;
 }
 
 .problem_title {
@@ -281,6 +279,7 @@ h2 {
 #problem-btn {
   margin-top: 2rem;
 }
+
 /* Media Queries */
 
 /* 1440 px & + */
