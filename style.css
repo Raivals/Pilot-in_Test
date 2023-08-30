@@ -168,12 +168,12 @@ h2 {
   align-items: flex-start;
   color: var(--primary-color);
   text-align: center;
-  /* specials/bouton/large */
+
   font-family: Outfit;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .intro {
@@ -263,8 +263,23 @@ h2 {
   flex-shrink: 0;
 }
 
+.problems {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 .problem_title {
   color: var(--secondary-color);
+}
+
+.paragraph {
+  width: 40%;
+  margin-left: 10rem;
+}
+
+#problem-btn {
+  margin-top: 2rem;
 }
 /* Media Queries */
 
