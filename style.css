@@ -45,6 +45,7 @@ h2 {
   --tertiary-color: #fd7762;
   --gray: #f7fafb;
   --white: #fff;
+  --blue: #f0fdff;
 }
 
 /* Titles size and fonts */
@@ -84,7 +85,7 @@ h2 {
   cursor: pointer;
 }
 
-/* Classic CSS */
+/* Navbar */
 
 .maintenance {
   display: flex;
@@ -176,6 +177,8 @@ h2 {
   line-height: 24px;
 }
 
+/* Introduction */
+
 .intro {
   padding-top: 7.8rem;
   background: var(
@@ -260,6 +263,8 @@ h2 {
   width: 100%;
 }
 
+/* Problematic */
+
 .problems {
   display: flex;
   justify-content: space-between;
@@ -288,6 +293,78 @@ h2 {
   height: 420px;
 }
 
+/* Challenge */
+.challenge {
+  margin-top: -13rem;
+  background: var(
+    --body-gradient,
+    linear-gradient(90deg, #072038 0%, #0a355f 100%)
+  );
+}
+
+.challenge_title {
+  padding-top: 20rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.challenge_span {
+  color: var(--primary-color);
+}
+
+.challenge_datafactory {
+  display: flex;
+  justify-content: space-between;
+  background: var(--white);
+  margin: 5rem;
+  border-radius: 1.5rem;
+}
+
+.challenge_img {
+  margin: 0 5rem 0 5rem;
+  width: 600px;
+  height: 750px;
+  object-fit: contain;
+}
+
+.datafactory_desc {
+  margin: 5rem;
+  width: 50%;
+}
+
+.datafactory_title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.datafactory_text {
+  margin-bottom: 2rem;
+}
+
+.datafactory_li {
+  padding: 10px;
+  margin-top: 2rem;
+  color: var(--secondary-color);
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.datafactory_li:hover {
+  transition-duration: 0.2s;
+  transition-delay: 0.1s;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  cursor: pointer;
+}
+
+#datafactory_btn {
+  margin-top: 2rem;
+}
 /* Media Queries */
 
 /* 1440 px & + */
