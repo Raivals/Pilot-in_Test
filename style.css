@@ -169,12 +169,20 @@ h2 {
   align-items: flex-start;
   color: var(--primary-color);
   text-align: center;
-
   font-family: Outfit;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+  cursor: pointer;
+}
+
+#chevron-lang {
+  margin: 0.2rem 0 0 0.3rem;
+}
+
+.language:hover {
+  opacity: 0.5;
 }
 
 /* Introduction */
@@ -337,6 +345,10 @@ h2 {
   margin-bottom: 2rem;
 }
 
+#title_icon {
+  margin-right: 2rem;
+}
+
 .datafactory_text {
   margin-bottom: 2rem;
 }
@@ -352,12 +364,23 @@ h2 {
   line-height: 28px;
 }
 
+#icon_card {
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 1rem;
+  background: var(--blue);
+}
+
+#icon_card:hover {
+  background: var(--white);
+}
+
 .datafactory_li:hover {
   transition-duration: 0.2s;
   transition-delay: 0.1s;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid var(--blue);
+
   background: var(--blue);
   cursor: pointer;
 }
