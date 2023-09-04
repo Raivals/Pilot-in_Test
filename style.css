@@ -388,6 +388,146 @@ h2 {
 #datafactory_btn {
   margin-top: 2rem;
 }
+
+/* They Trust in Pilot'in */
+.trust {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.trust_title {
+  color: var(--secondary-color);
+}
+.trust_text {
+  color: var(--secondary-color);
+  font-family: Outfit;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 58px;
+}
+
+.trust_img {
+  position: relative;
+  z-index: -10;
+}
+
+.trust_card {
+  margin: 5rem;
+  display: flex;
+  height: 600px;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 32px;
+  background: var(--secondary-color);
+}
+
+.trust_card_banner {
+  height: 100%;
+  width: 150rem;
+  object-fit: cover;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.trust_card_banner:after {
+  background: linear-gradient(270deg, #072038 0%, rgba(7, 32, 56, 0) 100%);
+  z-index: 100;
+}
+
+#trust_player {
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  padding: 15px 20px 15px 20px;
+  border-radius: 50%;
+  position: relative;
+  left: -30%;
+  top: 45%;
+}
+
+.trust_card_container {
+  margin: 2rem 2rem 2rem 0;
+  text-align: start;
+}
+
+.trust_card_logo {
+  object-fit: contain;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.trust_card_name {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.trust_card_desc {
+  font-size: 36px;
+  color: var(--white);
+  line-height: 40px;
+  margin-bottom: 2rem;
+}
+
+.arrow_icon {
+  cursor: pointer;
+}
+
+.next_screen {
+  background: var(--secondary-color);
+}
+
+#arrow_left {
+  margin-right: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 40px;
+}
+
+#arrow_right {
+  cursor: pointer;
+  padding: 10px;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 30px;
+}
+
+#arrow_left:hover {
+  color: var(--secondary-color);
+  background-color: var(--white);
+}
+
+#arrow_right:hover {
+  color: var(--secondary-color);
+  background-color: var(--white);
+}
+
+.dot_pagination {
+  align-items: flex-start;
+  display: flex;
+  justify-content: start;
+  margin-top: 3rem;
+}
+
+.dot {
+  background: var(--gray);
+  border-radius: 8px;
+  height: 12px;
+  margin: 0 5px;
+  transform: scale(0.75);
+  transition: transform 0.4s, background 0.4s;
+  width: 12px;
+}
+
+.dot.active {
+  background: var(--primary-color);
+  transform: scale(1);
+  transition-delay: 0.4s;
+}
 /* Media Queries */
 
 /* 1440 px & + */
