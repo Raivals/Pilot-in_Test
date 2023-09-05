@@ -373,16 +373,16 @@ h2 {
   cursor: pointer;
 }
 
-#icon_card {
+.datafactory_li:hover .icon_card {
+  background: var(--white);
+  transition: background-color 0.5s ease-in-out 100ms;
+}
+
+.icon_card {
   padding: 20px;
   border-radius: 10px;
   margin-right: 1rem;
   background: var(--blue);
-}
-
-#icon_card:hover {
-  background: var(--white);
-  transition: background-color 0.5s ease-in-out 100ms;
 }
 
 #datafactory_btn {
@@ -515,7 +515,7 @@ h2 {
   background: var(--secondary-color);
 }
 
-#arrow_left {
+.arrow_left {
   margin-right: 1rem;
   padding: 10px;
   cursor: pointer;
@@ -524,7 +524,7 @@ h2 {
   border-radius: 40px;
 }
 
-#arrow_right {
+.arrow_right {
   cursor: pointer;
   padding: 10px;
   color: var(--white);
@@ -532,13 +532,13 @@ h2 {
   border-radius: 30px;
 }
 
-#arrow_left:hover {
+.arrow_left:hover {
   color: var(--secondary-color);
   background-color: var(--white);
   transition: background-color 0.5s ease-in-out 100ms;
 }
 
-#arrow_right:hover {
+.arrow_right:hover {
   color: var(--secondary-color);
   background-color: var(--white);
   transition: background-color 0.5s ease-in-out 100ms;
@@ -569,10 +569,17 @@ h2 {
 
 /* Articles de blog */
 .article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin: 5rem;
 }
 
 .article_intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -580,6 +587,9 @@ h2 {
   margin: 2rem;
 }
 
+.article_text {
+  max-width: 1100px;
+}
 .article_cards {
   display: flex;
   justify-content: space-between;
@@ -597,8 +607,17 @@ h2 {
 .article_card:hover {
   background-color: var(--blue);
   transition: background-color 0.5s ease-in-out 100ms;
-  border: hidden;
   border: 2px solid var(--blue);
+}
+
+.article_card:hover .article_btn {
+  background-color: var(--blue);
+  transition: background-color 0.5s ease-in-out 100ms;
+}
+
+.article_card:hover .card_arrow_btn {
+  background-color: var(--blue);
+  transition: background-color 0.5s ease-in-out 100ms;
 }
 
 .article_btn {
@@ -614,7 +633,7 @@ h2 {
 }
 
 .article_btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
   color: var(--white);
   transition: background-color 0.5s ease-in-out 100ms;
 }
@@ -647,7 +666,7 @@ h2 {
 }
 
 .card_arrow_btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color) !important;
   color: var(--white);
   transition: background-color 0.5s ease-in-out 100ms;
 }
