@@ -256,6 +256,7 @@ h2 {
   text-transform: uppercase;
   color: var(--primary-color);
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .layout_data {
@@ -329,7 +330,7 @@ h2 {
 }
 
 .challenge_img {
-  margin: 0 5rem 0 5rem;
+  margin: 2rem 5rem 0 5rem;
   width: 600px;
   height: 750px;
   object-fit: contain;
@@ -364,6 +365,14 @@ h2 {
   line-height: 28px;
 }
 
+.datafactory_li:hover {
+  transition: background-color 0.5s ease-in-out 100ms;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--blue);
+  cursor: pointer;
+}
+
 #icon_card {
   padding: 20px;
   border-radius: 10px;
@@ -373,16 +382,7 @@ h2 {
 
 #icon_card:hover {
   background: var(--white);
-}
-
-.datafactory_li:hover {
-  transition-duration: 0.2s;
-  transition-delay: 0.1s;
-  padding: 10px;
-  border-radius: 10px;
-
-  background: var(--blue);
-  cursor: pointer;
+  transition: background-color 0.5s ease-in-out 100ms;
 }
 
 #datafactory_btn {
@@ -535,11 +535,13 @@ h2 {
 #arrow_left:hover {
   color: var(--secondary-color);
   background-color: var(--white);
+  transition: background-color 0.5s ease-in-out 100ms;
 }
 
 #arrow_right:hover {
   color: var(--secondary-color);
   background-color: var(--white);
+  transition: background-color 0.5s ease-in-out 100ms;
 }
 
 .dot_pagination {
@@ -564,6 +566,63 @@ h2 {
   transform: scale(1);
   transition-delay: 0.4s;
 }
+
+/* Articles de blog */
+.article {
+  margin: 5rem;
+}
+
+.article_intro {
+  text-align: center;
+}
+
+.article_title {
+  margin: 2rem;
+}
+
+.article_cards {
+  display: flex;
+}
+
+.article_card {
+  margin: 2rem;
+  padding: 1rem;
+  border: 2px solid #a0bdc0;
+  border-radius: 10px;
+  width: 500px;
+  height: 450px;
+}
+
+.article_btn {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-family: Porpora;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--white);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.article_btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transition: background-color 0.5s ease-in-out 100ms;
+}
+
+.article_explication {
+  margin: 1rem;
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.article_description {
+  margin: 1rem;
+}
+
 /* Media Queries */
 
 /* 1440 px & + */
