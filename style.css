@@ -393,6 +393,8 @@ h2 {
 .trust {
   margin-top: 3rem;
   text-align: center;
+  background: no-repeat right url("./assets/img/shape-dot-white-bg.png");
+  padding-bottom: 1rem;
 }
 
 .trust_title {
@@ -418,10 +420,9 @@ h2 {
 
 .trust_card.active {
   animation: fade 0.8s;
-  display: block;
   transform: translateX(0) scale(1);
   transition-delay: 0.4s;
-  margin: 5rem 5rem 5rem 5rem;
+  margin: 3rem 5rem 5rem 5rem;
   display: flex;
   height: 600px;
   align-items: flex-start;
@@ -441,13 +442,12 @@ h2 {
 
 .trust_card_banner {
   height: 100%;
-  width: 150rem;
   object-fit: cover;
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
 }
 
-.trust_card_banner:after {
+.trust_card_banner::after {
   background: linear-gradient(270deg, #072038 0%, rgba(7, 32, 56, 0) 100%);
   z-index: 100;
 }
@@ -459,7 +459,7 @@ h2 {
   padding: 15px 20px 15px 20px;
   border-radius: 50%;
   position: relative;
-  left: -30%;
+  left: -26%;
   top: 45%;
 }
 
@@ -582,6 +582,7 @@ h2 {
 
 .article_cards {
   display: flex;
+  justify-content: space-between;
 }
 
 .article_card {
@@ -590,7 +591,14 @@ h2 {
   border: 2px solid #a0bdc0;
   border-radius: 10px;
   width: 500px;
-  height: 450px;
+  height: 480px;
+}
+
+.article_card:hover {
+  background-color: var(--blue);
+  transition: background-color 0.5s ease-in-out 100ms;
+  border: hidden;
+  border: 2px solid var(--blue);
 }
 
 .article_btn {
@@ -621,6 +629,27 @@ h2 {
 
 .article_description {
   margin: 1rem;
+}
+
+.article_footer {
+  margin: 2rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_arrow_btn {
+  background-color: var(--white);
+  border: 1px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card_arrow_btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  transition: background-color 0.5s ease-in-out 100ms;
 }
 
 /* Media Queries */
