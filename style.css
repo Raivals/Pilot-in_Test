@@ -671,6 +671,42 @@ h2 {
   transition: background-color 0.5s ease-in-out 100ms;
 }
 
+.book {
+  margin: 5rem;
+}
+
+.book_demo {
+  display: flex;
+  height: 600px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.book_img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.book_description {
+  margin: 8rem 5rem 5rem 5rem;
+}
+
+.book_title {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.book_subtitle {
+  color: var(--white);
+  font-family: Outfit;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 2rem;
+}
 /* Media Queries */
 
 /* 1440 px & + */
