@@ -66,24 +66,26 @@ h2 {
   color: var(--secondary-color);
   text-align: center;
   cursor: pointer;
+  display: flex;
+  gap: 5px;
 }
 
 .arrow-right-btn {
-  opacity: 0;
+  display: none;
 }
 
 .btn_blue:hover .arrow-right-btn {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out 100ms;
+  display: block;
+  transition: 0.5s ease-in-out 100ms;
 }
 
 .btn_orange:hover .arrow-right-btn {
-  opacity: 1;
+  display: block;
   transition: opacity 0.5s ease-in-out 100ms;
 }
 
 .borderless_btn:hover .arrow-right-btn {
-  opacity: 1;
+  display: block;
   transition: opacity 0.5s ease-in-out 100ms;
 }
 
@@ -92,6 +94,8 @@ h2 {
 }
 
 .btn_orange {
+  justify-content: center;
+  align-items: center;
   padding: 12px 16px;
   color: var(--secondary-color);
   gap: 8px;
@@ -105,6 +109,8 @@ h2 {
   line-height: 24px;
   text-align: center;
   cursor: pointer;
+  display: flex;
+  gap: 5px;
 }
 
 .borderless_btn {
@@ -115,6 +121,10 @@ h2 {
   font-weight: 500;
   line-height: 24px; /* 150% */
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
 }
 
 /* Navbar */
