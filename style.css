@@ -55,7 +55,6 @@ h2 {
   padding: 12px 16px;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   border-radius: 30px;
   border: 1px solid var(--primary-color);
   background: var(--primary-color);
@@ -67,6 +66,29 @@ h2 {
   color: var(--secondary-color);
   text-align: center;
   cursor: pointer;
+}
+
+.arrow-right-btn {
+  opacity: 0;
+}
+
+.btn_blue:hover .arrow-right-btn {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 100ms;
+}
+
+.btn_orange:hover .arrow-right-btn {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 100ms;
+}
+
+.borderless_btn:hover .arrow-right-btn {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 100ms;
+}
+
+.borderless_btn:hover {
+  opacity: 0.5;
 }
 
 .btn_orange {
@@ -82,6 +104,16 @@ h2 {
   font-weight: 500;
   line-height: 24px;
   text-align: center;
+  cursor: pointer;
+}
+
+.borderless_btn {
+  color: var(--primary-color);
+  font-family: "Outfit";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
   cursor: pointer;
 }
 
@@ -102,19 +134,6 @@ h2 {
   line-height: 20px;
 }
 
-.borderless_btn {
-  color: var(--primary-color);
-  text-align: center;
-  font-family: "Outfit";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  cursor: pointer;
-}
 .navbar {
   background: var(
     --body-gradient,
@@ -671,6 +690,8 @@ h2 {
   transition: background-color 0.5s ease-in-out 100ms;
 }
 
+/* Book a demo part */
+
 .book {
   margin: 5rem;
 }
@@ -706,6 +727,53 @@ h2 {
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 2rem;
+}
+
+/* Footer */
+
+.links {
+  height: 300px;
+  margin: 10rem 5rem 0 5rem;
+  background: no-repeat right url("./assets/img/shape-dot-white-bg.png");
+  display: flex;
+  justify-content: space-between;
+}
+
+.links_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.links_title {
+  margin-bottom: 1rem;
+  color: #156b79;
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  list-style: none;
+}
+
+.books_link {
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.footer_banner {
+  padding: 1rem 5rem 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--gray);
+}
+
+.footer_link {
+  color: black;
+}
+
+.footer_link:visited {
+  color: black !important;
 }
 /* Media Queries */
 
