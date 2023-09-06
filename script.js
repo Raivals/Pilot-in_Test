@@ -39,3 +39,24 @@ function prevSlide() {
 previous.addEventListener("click", prevSlide)
 previous1.addEventListener("click", prevSlide)
 previous2.addEventListener("click", prevSlide)
+
+// Truncate string
+
+const titles = document.querySelectorAll(".article_explication")
+
+titles.forEach((title) => {
+  truncateString(title.innerHTML, 107, title)
+})
+
+const texts = document.querySelectorAll(".article_description")
+texts.forEach((text) => {
+  truncateString(text.innerHTML, 320, text)
+})
+
+function truncateString(str, num, elt) {
+  if (str.length <= num) {
+    return (elt.innerHTML = str)
+  } else {
+    return (elt.innerHTML = str.slice(0, num).concat("..."))
+  }
+}
