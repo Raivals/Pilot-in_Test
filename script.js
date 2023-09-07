@@ -1,3 +1,67 @@
+/**
+ * calcul la position de l'élément par rapport au haut de la page
+ * @param {HTMLElement} element
+ * @returns {number}
+ */
+function offsetTop(element, acc = 0) {
+  if (!element.offsetParent) {
+    return offsetTop(element.offsetParent, ac + element.offsetTop)
+  }
+  return acc + element.offsetTop
+}
+
+// Parrallaxe effect
+class Parallax {
+  /**
+   *
+   * @param {HTMLElement} element
+   */
+  constructor(element) {
+    this.element = element
+    this.ratio = parseFloat(element.dataset.parallax)
+    this.onScroll = this.onScroll.bind(this)
+    this.onIntersection = this.onIntersection.bind(this)
+    const observer = new IntersectionObserver(this.onIntersection)
+    observer.observe(element)
+  }
+
+  /**
+   * @param {IntersectionObserverEntry[]} entries
+   */
+  onIntersection(entries) {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        document.addEventListener("scroll", this.onScroll)
+      } else {
+        document.removeEventListener("scroll", this.onScroll)
+      }
+    }
+  }
+
+  onScroll() {
+    console.log(this.element.getAttribute("class"))
+    const screenY = window.scrollY + window.innerHeight / 2
+    const elementY = offsetTop(this.element) + this.element.offsetHeight / 2
+    const diffY = elementY - screenY
+    this.element.style.setProperty(
+      "transform",
+      `translateY(${diffY * -1 * this.ratio}px)`,
+    )
+  }
+
+  /**
+   * @returns {Parallax[]}
+   */
+  static bind() {
+    return Array.from(document.querySelectorAll(".parallax")).map((element) => {
+      return new Parallax(element)
+    })
+  }
+}
+
+Parallax.bind()
+// Caroussel
+
 const items = document.querySelectorAll(".trust_card")
 const nbSlide = items.length
 const next = document.querySelector(".next_screen")

@@ -109,10 +109,6 @@ h2 {
   display: none;
 }
 
-.btn_blue:hover {
-  transform: translate(-50px);
-}
-
 .btn_blue:hover .arrow-right-btn {
   display: block;
   animation: fadein 2s;
@@ -352,13 +348,13 @@ h2 {
 /* Problematic */
 
 .problems {
-  background: no-repeat right url(./assets/img/parallaxe-shapes-duo-colors.svg);
-  height: 100%;
-  background-attachment: fixed;
+  /*background: no-repeat right url(./assets/img/parallaxe-shapes-duo-colors.svg);
+  height: 100%; */
+  display: flex;
 }
 
 .problem_card {
-  margin: 5rem 15rem 5rem 5rem;
+  margin: 5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -376,7 +372,8 @@ h2 {
 }
 
 .transition_img {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .computer_screen {
@@ -482,7 +479,6 @@ h2 {
   margin-top: 3rem;
   text-align: center;
   background: no-repeat right url("./assets/img/shape-dot-white-bg.png");
-  background-attachment: fixed;
   padding-bottom: 1rem;
 }
 
@@ -805,7 +801,6 @@ h2 {
   height: 300px;
   margin: 10rem 5rem 0 5rem;
   background: no-repeat right url("./assets/img/shape-dot-white-bg.png");
-  background-attachment: fixed;
   display: flex;
   justify-content: space-between;
 }
