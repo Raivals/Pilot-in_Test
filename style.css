@@ -358,16 +358,22 @@ h2 {
   border-radius: 1.5rem;
 }
 
+.challenge_propilot {
+  display: flex;
+  margin: 5rem;
+  border-radius: 1.5rem;
+  background: var(--white) no-repeat right url("./assets/img/Ellipse\ 20.png");
+}
+
 .challenge_img {
   margin: 2rem 5rem 0 5rem;
   width: 600px;
-  height: 750px;
+  height: 800px;
   object-fit: contain;
 }
 
 .datafactory_desc {
   margin: 5rem;
-  width: 50%;
 }
 
 .datafactory_title {
