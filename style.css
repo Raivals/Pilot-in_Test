@@ -352,9 +352,15 @@ h2 {
 /* Problematic */
 
 .problems {
+  background: no-repeat right url(./assets/img/parallaxe-shapes-duo-colors.svg);
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.problem_card {
+  margin: 5rem 15rem 5rem 5rem;
   display: flex;
   justify-content: space-between;
-  margin: 5rem 0 0 11rem;
 }
 
 .problem_title {
@@ -363,7 +369,6 @@ h2 {
 
 .paragraph {
   width: 40%;
-  margin-left: 10rem;
 }
 
 #problem-btn {
@@ -477,6 +482,7 @@ h2 {
   margin-top: 3rem;
   text-align: center;
   background: no-repeat right url("./assets/img/shape-dot-white-bg.png");
+  background-attachment: fixed;
   padding-bottom: 1rem;
 }
 
@@ -799,6 +805,7 @@ h2 {
   height: 300px;
   margin: 10rem 5rem 0 5rem;
   background: no-repeat right url("./assets/img/shape-dot-white-bg.png");
+  background-attachment: fixed;
   display: flex;
   justify-content: space-between;
 }
