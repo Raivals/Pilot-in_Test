@@ -685,12 +685,10 @@ h2 {
 }
 
 .article_card {
-  margin: 2rem;
+  margin: 3rem;
   padding: 1rem;
   border: 2px solid #a0bdc0;
   border-radius: 10px;
-  width: 500px;
-  height: 480px;
 }
 
 .article_card:hover {
@@ -848,8 +846,6 @@ h2 {
 
 /* A FAIRE /!\ */
 
-/* Transition flèche en hover */
-/* On scroll anim parallaxe */
 /* MEGA Menu */
 /* Media Queries */
 
