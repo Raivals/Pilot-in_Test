@@ -482,6 +482,10 @@ h2 {
   padding-bottom: 1rem;
 }
 
+.trust_main {
+  display: flex;
+}
+
 .trust_title {
   color: var(--secondary-color);
 }
