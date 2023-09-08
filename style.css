@@ -202,6 +202,7 @@ h2 {
 
 .navbar:hover {
   background: var(--white);
+  transition: all 0.5s ease-in;
 }
 
 .navbar:hover .logo-img {
@@ -312,6 +313,13 @@ h2 {
 
 .item_logo {
   margin: 0 2rem 2rem 5rem;
+  padding: 3rem;
+}
+
+.item_logo:hover {
+  background: var(--blue);
+  border-radius: 20px;
+  transition: all 0.5s ease-in;
 }
 
 .nav_chart {
