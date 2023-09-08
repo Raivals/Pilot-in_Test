@@ -46,6 +46,7 @@ h2 {
   --gray: #f7fafb;
   --white: #fff;
   --blue: #f0fdff;
+  --shadow: rgba(32, 7, 65, 0.14);
 }
 
 /* Keyframes */
@@ -199,8 +200,30 @@ h2 {
   padding: 0.5rem 5rem;
 }
 
+.navbar:hover {
+  background: var(--white);
+}
+
+.navbar:hover .logo-img {
+  display: block;
+}
+
+.navbar:hover .logo-img-white {
+  display: none;
+}
+
+.navbar:hover .nav_link {
+  color: var(--secondary-color);
+}
+
+.logo-img-white {
+  width: 190px;
+  display: block;
+}
+
 .logo-img {
   width: 190px;
+  display: none;
 }
 
 .navbar_left {
@@ -222,12 +245,82 @@ h2 {
   list-style: none;
 }
 
-.navbar_li {
-  text-decoration: none !important;
+.nav_list {
+  display: inline-flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 1.5rem;
 }
 
-.navbar_container {
-  display: none !important;
+.nav_link {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+}
+
+.nav_link:hover {
+  background: var(--blue);
+  color: var(--secondary-color);
+  transition: all 0.5s ease-in;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  box-shadow: 0rem 0.2rem 0.5rem var(--shadow);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.5s ease-in;
+}
+
+.dropdown_inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.nav_list_menu:hover .fa-chevron-down {
+  transition: all 0.5s ease-in;
+  transform: rotate(180deg);
+  color: var(--secondary-color);
+}
+
+.nav_list_menu:hover .dropdown {
+  clip-path: polygon(0 0, 100% 0, 100% 102%, 0 102%);
+}
+
+.item_heading {
+  color: var(--secondary-color);
+  margin: 1rem 1rem 1rem 3rem;
+}
+
+.item_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--secondary-color);
+  margin: 3rem 5rem;
+}
+
+.item_logo {
+  margin: 0 2rem 2rem 5rem;
+}
+
+.nav_chart {
+  margin: 0 1rem 1rem 0;
+}
+
+.item_title {
+  color: var(--primary-color);
+  font-size: 18px;
 }
 
 .navbar-right {
