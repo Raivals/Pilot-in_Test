@@ -31,10 +31,6 @@ h2 {
   line-height: 60px;
 }
 
-a:visited {
-  color: black !important;
-}
-
 @media screen and (max-width: 1024px) {
   p {
     font-size: 15px;
@@ -1286,6 +1282,10 @@ a:visited {
 
 .footer_link:visited {
   color: black !important;
+}
+
+.social_icon:visited {
+  color: black;
 }
 
 @media screen and (max-width: 1024px) {
