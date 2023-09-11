@@ -31,6 +31,22 @@ h2 {
   line-height: 60px;
 }
 
+@media screen and (max-width: 1024px) {
+  p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
 @font-face {
   font-family: Porpora;
   src: url(./assets/fonts/Porpora-Regular\ 12.14.56.ttf);
@@ -170,6 +186,18 @@ h2 {
   align-items: center;
   display: flex;
   gap: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn_blue {
+    font-size: 15px;
+  }
+  .btn_orange {
+    font-size: 15px;
+  }
+  .borderless_btn {
+    font-size: 15px;
+  }
 }
 
 /* Navbar */
@@ -313,7 +341,7 @@ h2 {
 
 .item_logo {
   margin: 0 2rem 2rem 5rem;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .item_logo:hover {
@@ -357,6 +385,41 @@ h2 {
 
 .language:hover {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 1440px) {
+  .item_logo {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+  .navbar_left {
+    gap: 0;
+    align-items: center;
+  }
+  .logo-img-white {
+    width: 120px;
+  }
+  .logo-img {
+    width: 120px;
+  }
+  .nav_link {
+    font-size: 15px;
+  }
+
+  .item_list {
+    margin: 2rem 0;
+  }
+  .navbar_ul {
+    gap: 0;
+  }
+  .navbar-right {
+    gap: 10px;
+  }
 }
 
 /* Introduction */
@@ -446,11 +509,19 @@ h2 {
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .main_intro {
+    width: 100%;
+  }
+  .img_datacloud {
+    display: none !important;
+  }
+}
+
 /* Problematic */
 
 .problems {
-  /*background: no-repeat right url(./assets/img/parallaxe-shapes-duo-colors.svg);
-  height: 100%; */
+  height: 100%;
   display: flex;
 }
 
@@ -480,6 +551,26 @@ h2 {
 .computer_screen {
   width: 1050px;
   height: 420px;
+}
+
+@media screen and (max-width: 1440px) {
+  .paragraph {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .problem_card {
+    flex-direction: column;
+  }
+
+  .problem_title {
+    margin-bottom: 2rem;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
 }
 
 /* Challenge */
@@ -523,6 +614,10 @@ h2 {
   object-fit: contain;
 }
 
+.ipad_img {
+  width: 100%;
+}
+
 .datafactory_desc {
   margin: 5rem;
 }
@@ -532,7 +627,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
-#title_icon {
+.title_icon {
   margin-right: 2rem;
 }
 
@@ -562,6 +657,39 @@ h2 {
 .datafactory_li:hover .icon_card {
   background: var(--white);
   transition: background-color 0.5s ease-in-out 100ms;
+}
+
+@media screen and (max-width: 1440px) {
+  .challenge_img {
+    margin: 5rem 5rem 0 5rem;
+    width: 400px;
+    height: 600px;
+  }
+
+  .datafactory_title {
+    margin-bottom: 1rem;
+  }
+
+  .datafactory_li {
+    margin-top: 0.5rem;
+  }
+
+  .ipad_img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .challenge_img {
+    display: none !important;
+  }
+  .ipad_img {
+    display: none !important;
+  }
+
+  .computer_screen {
+    width: 90%;
+  }
 }
 
 .icon_card {
@@ -758,6 +886,28 @@ h2 {
   transition-delay: 0.4s;
 }
 
+@media screen and (max-width: 1440px) {
+  .trust_card {
+    height: 100%;
+  }
+  .trust_card_banner {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .trust_card.active {
+    height: 400px;
+  }
+  .trust_card_banner {
+    display: none !important;
+  }
+  .trust_card_desc {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
 /* Articles de blog */
 .article {
   display: flex;
@@ -860,6 +1010,26 @@ h2 {
   transition: background-color 0.5s ease-in-out 100ms;
 }
 
+@media screen and (max-width: 1440px) {
+  .article_card {
+    margin: 2rem;
+  }
+
+  .article_name {
+    font-size: 18px;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .article {
+    margin: 2rem;
+  }
+  .article_cards {
+    flex-direction: column;
+  }
+}
+
 /* Book a demo part */
 
 .book {
@@ -897,6 +1067,19 @@ h2 {
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .book_demo {
+    height: 50%;
+    flex-direction: column-reverse;
+  }
+  .book_img {
+    width: 100%;
+  }
+  .book_description {
+    margin: 2rem 2rem;
+  }
 }
 
 /* Footer */
@@ -946,13 +1129,10 @@ h2 {
   color: black !important;
 }
 
-/* A FAIRE /!\ */
-
-/* MEGA Menu */
-/* Media Queries */
-
-/* 1440 px & + */
-
-/* 720 px & + */
-
-/* 350 px & + */
+@media screen and (max-width: 1024px) {
+  .links {
+    height: 200px;
+    margin: 0 2rem;
+    gap: 60px;
+  }
+}

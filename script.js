@@ -117,7 +117,7 @@ titles.forEach((title) => {
 
 const texts = document.querySelectorAll(".article_description")
 texts.forEach((text) => {
-  truncateString(text.innerHTML, 320, text)
+  truncateString(text.innerHTML, 100, text)
 })
 
 function truncateString(str, num, elt) {
