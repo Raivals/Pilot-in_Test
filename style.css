@@ -47,6 +47,26 @@ h2 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .parallaxe {
+    display: none !important;
+  }
+}
+
 @font-face {
   font-family: Porpora;
   src: url(./assets/fonts/Porpora-Regular\ 12.14.56.ttf);
@@ -197,6 +217,21 @@ h2 {
   }
   .borderless_btn {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn_blue {
+    font-size: 15px;
+    line-height: 12px;
+  }
+  .btn_orange {
+    font-size: 15px;
+    line-height: 12px;
+  }
+  .borderless_btn {
+    font-size: 15px;
+    line-height: 12px;
   }
 }
 
@@ -387,6 +422,10 @@ h2 {
   opacity: 0.5;
 }
 
+.fa-bars {
+  display: none;
+}
+
 @media screen and (max-width: 1440px) {
   .item_logo {
     margin: 0;
@@ -422,6 +461,26 @@ h2 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .maintenance {
+    padding: 8px 2rem;
+  }
+  .navbar_ul {
+    display: none !important;
+  }
+
+  #demo_btn {
+    display: none;
+  }
+  .language {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    color: var(--white);
+  }
+}
 /* Introduction */
 
 .intro {
@@ -515,6 +574,20 @@ h2 {
   }
   .img_datacloud {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main_intro {
+    padding: 0.5rem 2rem;
+  }
+  .client_container {
+    display: none;
+  }
+
+  .main_description {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
@@ -689,6 +762,41 @@ h2 {
 
   .computer_screen {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .computer_screen {
+    height: 200px;
+  }
+  .challenge {
+    margin-top: -6rem;
+  }
+
+  .challenge_title {
+    padding-top: 8rem;
+  }
+
+  .challenge_datafactory {
+    margin: 2rem;
+  }
+
+  .datafactory_desc {
+    margin: 2rem 1rem;
+  }
+
+  .title_icon {
+    margin-right: 1rem;
+  }
+
+  .datafactory_li {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .challenge_propilot {
+    margin: 2rem;
+    background: var(--white);
   }
 }
 
@@ -908,6 +1016,27 @@ h2 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .trust_text {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .trust_card.active {
+    margin: 2rem;
+  }
+
+  #trust_player {
+    display: none;
+  }
+  .trust_card_container {
+    margin: 2rem 3rem 2rem 3rem;
+  }
+  .dot_pagination {
+    margin-top: 1rem;
+  }
+}
+
 /* Articles de blog */
 .article {
   display: flex;
@@ -1030,6 +1159,13 @@ h2 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .article_name {
+    font-size: 15px;
+    margin: 0.5rem;
+  }
+}
+
 /* Book a demo part */
 
 .book {
@@ -1079,6 +1215,20 @@ h2 {
   }
   .book_description {
     margin: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .book {
+    margin: 2rem;
+  }
+
+  .book_subtitle {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .book_img {
+    display: none !important;
   }
 }
 
@@ -1134,5 +1284,26 @@ h2 {
     height: 200px;
     margin: 0 2rem;
     gap: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .links {
+    height: 100%;
+    gap: 0;
+    background: var(--white);
+    flex-direction: column;
+  }
+
+  .links_list {
+    margin-bottom: 0.5rem;
+  }
+  .links_title {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .footer_banner {
+    margin-top: 0.5rem;
+    padding: 1rem 2rem;
   }
 }
