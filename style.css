@@ -479,6 +479,11 @@ h2 {
   .fa-bars {
     display: block;
     color: var(--white);
+    cursor: pointer;
+  }
+
+  .navbar:hover .fa-bars {
+    color: var(--secondary-color);
   }
 }
 /* Introduction */
