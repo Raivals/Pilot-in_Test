@@ -591,7 +591,7 @@ h2 {
   }
 
   .main_description {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 15px;
   }
 }
@@ -648,6 +648,12 @@ h2 {
 
   .paragraph {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .problem_card {
+    margin: 2rem;
   }
 }
 
@@ -1167,6 +1173,19 @@ h2 {
 @media screen and (max-width: 767px) {
   .article_name {
     font-size: 15px;
+    margin: 0.5rem;
+  }
+  .article_explication {
+    margin: 0.5rem;
+  }
+  .article_btn {
+    margin: 0.5rem;
+  }
+  .article_description {
+    margin: 0.5rem;
+  }
+
+  .article_footer {
     margin: 0.5rem;
   }
 }
