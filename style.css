@@ -277,7 +277,6 @@ h2 {
 
 .navbar:hover {
   background: var(--white);
-  transition: all 0.5s ease-in;
 }
 
 .navbar:hover .logo-img {
