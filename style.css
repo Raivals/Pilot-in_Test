@@ -1294,6 +1294,7 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .links {
+    margin-bottom: 2rem;
     height: 100%;
     gap: 0;
     background: var(--white);
@@ -1305,7 +1306,7 @@ h2 {
   }
   .links_title {
     font-size: 15px;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
   .footer_banner {
     margin-top: 0.5rem;
