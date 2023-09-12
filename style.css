@@ -140,6 +140,7 @@ h2 {
   cursor: pointer;
   display: flex;
   gap: 5px;
+  transition: transform 330ms ease-in-out;
 }
 
 .arrow-right-btn {
@@ -154,12 +155,20 @@ h2 {
   -o-animation: fadein 2s; /* Opera */
 }
 
+.btn_blue:hover {
+  transform: scaleX(1.1);
+}
+
 .btn_orange:hover .arrow-right-btn {
   display: block;
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari et Chrome */
   -o-animation: fadein 2s; /* Opera */
+}
+
+.btn_orange:hover {
+  transform: scaleX(1.1);
 }
 
 .borderless_btn:hover .arrow-right-btn {
@@ -172,6 +181,7 @@ h2 {
 
 .borderless_btn:hover {
   opacity: 0.5;
+  transform: scaleX(1.1);
 }
 
 .btn_orange {
@@ -192,6 +202,7 @@ h2 {
   cursor: pointer;
   display: flex;
   gap: 5px;
+  transition: transform 330ms ease-in-out;
 }
 
 .borderless_btn {
@@ -206,6 +217,7 @@ h2 {
   align-items: center;
   display: flex;
   gap: 5px;
+  transition: transform 330ms ease-in-out;
 }
 
 @media screen and (max-width: 1024px) {
