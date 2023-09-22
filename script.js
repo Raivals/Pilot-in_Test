@@ -1,3 +1,18 @@
+// Maint title animation
+const txtAnim = document.querySelector("h1")
+
+new Typewriter(txtAnim, {
+  loop: true,
+  deleteSpeed: 20,
+})
+  .changeDelay(50)
+  .typeString(
+    'Meet the future of your <span style="color: #26c1d9">organization</span> today',
+  )
+  .pauseFor(10000)
+  .deleteChars(50)
+  .start()
+
 /**
  * calcul la position de l'élément par rapport au haut de la page
  * @param {HTMLElement} element
@@ -5,7 +20,7 @@
  */
 function offsetTop(element, acc = 0) {
   if (!element.offsetParent) {
-    return offsetTop(element.offsetParent, ac + element.offsetTop)
+    return offsetTop(element.offsetParent, acc + element.offsetTop)
   }
   return acc + element.offsetTop
 }

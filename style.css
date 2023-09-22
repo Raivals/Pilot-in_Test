@@ -556,19 +556,32 @@ h2 {
   object-fit: contain;
 }
 
-.banner_layout {
+.container_banner_layout {
+  display: flex;
   margin-top: 6rem;
   transform: rotate(-3.5deg);
   text-align: center;
   font-family: Outfit;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.banner_layout {
   font-size: 160px;
   font-style: normal;
   font-weight: 500;
   line-height: 160px; /* 100% */
-  text-transform: uppercase;
   color: var(--primary-color);
-  white-space: nowrap;
-  overflow: hidden;
+  animation: Scroll 50s linear infinite;
+}
+
+@keyframes Scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 
 .layout_data {
@@ -868,9 +881,7 @@ h2 {
 }
 
 .trust_card.active {
-  animation: fade 0.8s;
-  transform: translateX(0) scale(1);
-  transition-delay: 0.4s;
+  animation: fade 2s;
   margin: 3rem 5rem 5rem 5rem;
   display: flex;
   height: 600px;
@@ -910,6 +921,11 @@ h2 {
   position: relative;
   left: -28%;
   top: 45%;
+}
+
+#trust_player:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out 100ms;
 }
 
 .trust_card_container {
