@@ -280,8 +280,13 @@ h2 {
   opacity: 1;
 }
 
+.navbar_scrolled {
+  opacity: 0.5;
+}
+
 .navbar:hover {
   background: var(--white);
+  opacity: 1;
 }
 
 .navbar:hover .logo-img {

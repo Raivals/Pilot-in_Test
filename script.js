@@ -1,5 +1,15 @@
 /* navbar on scroll */
 
+const navbar = document.querySelector(".navbar")
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add("navbar_scrolled")
+  } else if (window.scrollY < 50) {
+    navbar.classList.remove("navbar_scrolled")
+  }
+})
+
 /* navbar smartphone */
 let nav_toggle = document.querySelector(".fa-bars")
 
