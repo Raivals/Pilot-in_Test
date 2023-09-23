@@ -1,3 +1,5 @@
+/* navbar on scroll */
+
 /* navbar smartphone */
 let nav_toggle = document.querySelector(".fa-bars")
 
