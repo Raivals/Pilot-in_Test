@@ -1,3 +1,12 @@
+/* navbar smartphone */
+let nav_toggle = document.querySelector(".fa-bars")
+
+let nav_menu = document.querySelector(".navbar_ul")
+
+nav_toggle.addEventListener("click", () => {
+  nav_menu.classList.toggle("active")
+})
+
 // Maint title animation
 const txtAnim = document.querySelector("h1")
 

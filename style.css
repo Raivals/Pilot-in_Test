@@ -83,6 +83,7 @@ h2 {
   --white: #fff;
   --blue: #f0fdff;
   --shadow: rgba(32, 7, 65, 0.14);
+  --nav-height: 3rem;
 }
 
 /* Keyframes */
@@ -307,6 +308,7 @@ h2 {
   align-items: end;
   gap: 48px;
 }
+
 .navbar_ul {
   font-family: Outfit;
   font-size: 16px;
@@ -474,10 +476,92 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .maintenance {
-    padding: 8px 2rem;
-  }
-  .navbar_ul {
     display: none !important;
+  }
+
+  .navbar:hover {
+    background: var(
+      --body-gradient,
+      linear-gradient(90deg, #072038 0%, #0a355f 100%)
+    );
+  }
+
+  .navbar:hover .logo-img-white {
+    display: block;
+  }
+
+  .navbar:hover .logo-img {
+    display: none;
+  }
+
+  .navbar:hover .nav_link {
+    color: var(--white);
+  }
+
+  .navbar_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar_ul.active {
+    display: block;
+    z-index: 1000;
+  }
+
+  .navbar_ul.active:hover {
+    background-color: var(
+      --body-gradient,
+      linear-gradient(90deg, #072038 0%, #0a355f 100%)
+    );
+  }
+
+  .nav_list {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .nav_link {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav_link:hover {
+    background: var(
+      --body-gradient,
+      linear-gradient(90deg, #072038 0%, #0a355f 100%)
+    );
+    color: var(--secondary-color);
+    transition: all 0.5s ease-in;
+    padding: 10px;
+    border-radius: 0px;
+  }
+
+  .dropdown {
+    top: 0;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 0 0);
+    box-shadow: none;
+    height: 0;
+    text-align: start;
+    transition: all 0.5s ease-in;
+  }
+
+  .nav_list_menu:hover .dropdown {
+    height: 100%;
+    transition: all 0.5s ease-in;
+  }
+
+  .item_list {
+    display: flex;
+    flex-direction: column;
   }
 
   #demo_btn {
@@ -494,7 +578,7 @@ h2 {
   }
 
   .navbar:hover .fa-bars {
-    color: var(--secondary-color);
+    color: var(--white);
   }
 }
 /* Introduction */
@@ -608,7 +692,7 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .main_intro {
-    padding: 0.5rem 2rem;
+    padding: 5rem 2rem 0.5rem 2rem;
   }
   .client_container {
     display: none;
